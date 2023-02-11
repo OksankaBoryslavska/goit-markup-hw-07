@@ -15,7 +15,7 @@ body {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
   margin: 0 auto;
 }
 
@@ -34,5 +34,23 @@ body {
   list-style-type: none;
   justify-content: space-between;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// DESKTOP RESPONSIVE
+
+@media screen and (min-width: 1200px) {
+  .list {
+    flex-wrap: nowrap;
+  }
+  .section {
+    padding: 94px 0;
+  }
 }

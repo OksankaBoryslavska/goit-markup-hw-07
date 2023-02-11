@@ -1,12 +1,18 @@
 // Czym się zajmujemy
+
+.works {
+  display: none;
+}
+
 .works__item {
   position: relative;
 
-& > img {
-  display: block;
+  &_ > img {
+    display: block;
+  }
 }
 
-&__description {
+.works__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -20,4 +26,11 @@
   bottom: 0;
   padding: 27px;
 }
+
+// DESKTOP RESPONSIVE
+
+@media screen and (min-width: 1200px) {
+  .works {
+    display: block;
+  }
 }
